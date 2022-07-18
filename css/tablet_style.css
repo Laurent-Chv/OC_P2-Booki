@@ -1,7 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
+/* TABLETS - medium devices (beetwenn 768px and 992px) */
 /* GENERAL SETTINGS */
 
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Width and main position */
 *{
    box-sizing: border-box;
 }
@@ -14,7 +17,12 @@ body {
 
 #container{
    width: 100%;
-   max-width: 1200px;
+   max-width: 992px;
+}
+
+/* Text color */
+nav a, h1, h2, h3{
+   color: #000;
 }
 
 /* HEADER */
@@ -30,9 +38,8 @@ header{
 }
 
 #logo img{
-   width: 120px;
-   height: auto;
-   padding-left: 15px;
+   height: 45px;
+   margin-left: 10px;
 }
 
 nav{
@@ -43,7 +50,7 @@ nav{
 
 nav ul{
    display: flex;
-   list-style: none;
+   list-style-type: none;
 }
 
 nav a{
@@ -56,4 +63,5 @@ nav a:hover{
    color: #0065FC;
    border-top: 3px solid #0065FC;
 }
+
 
