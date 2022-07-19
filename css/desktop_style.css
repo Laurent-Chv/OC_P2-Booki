@@ -4,26 +4,47 @@
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-/* Width and main position */
+/* Width and containers */
 *{
    box-sizing: border-box;
 }
 
-body {
+/* body {
    font-family: 'Raleway', sans-serif;
 	display: flex;
 	justify-content: center;
+} */
+
+body {
+   font-family: 'Raleway', sans-serif;
+	display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 #container{
-   width: 100%;
+   width: 95%;
    max-width: 1400px;
 }
 
 /* Text color */
-nav a, h1, h2, h3{
+h1, h2, h3, nav a{
    color: #000;
 }
+
+/* Background colors */
+.blue{
+   background-color: #0065FC;
+}
+
+.light-blue{
+   background-color: #DEEBFF;
+}
+
+.grey{
+   background-color: #F2F2F2;
+}
+
 
 /* HEADER */
 header{
@@ -63,5 +84,58 @@ nav a:hover{
    color: #0065FC;
    border-top: 3px solid #0065FC;
 }
+
+
+/* MAIN */
+/* SECTION SEARCH */
+
+/* search-header Part */
+h1{
+   font-size: 23px;
+   margin: 0;
+}
+
+#search-header p{
+   margin: 5px 0 15px 0;
+}
+
+/* Form Part */
+fieldset{
+   border: none;
+   margin: 0;
+   padding: 0;
+}
+
+#locat-icon, #location, #research-btn{
+   margin: 0;
+   padding: 18px;
+   font-size: 18px;
+   font-weight: bold;
+   width: fit-content;
+   border: 1px solid #F2F2F2;
+}
+
+#locat-icon{
+   border-radius: 15px 0 0 15px;
+}
+
+#location{
+   padding: 17px;
+   position: relative;
+   bottom: 1px; right: 5px;
+}
+
+#research-btn{
+   color: #fff;
+   border: none;
+   border-radius: 0 15px 15px 0;
+   position: relative;
+   right: 10px;
+}
+
+#research-icon{
+   display: none;
+}
+
 
 

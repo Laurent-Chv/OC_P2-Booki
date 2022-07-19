@@ -9,10 +9,17 @@
    box-sizing: border-box;
 }
 
-body {
+/* body {
    font-family: 'Raleway', sans-serif;
 	display: flex;
 	justify-content: center;
+} */
+
+body {
+   font-family: 'Raleway', sans-serif;
+	display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
 #container{
@@ -20,10 +27,29 @@ body {
    max-width: 768px;
 }
 
+#main-mobile-container, #footer-mobile-container{
+   width: 90%;
+   margin: auto;
+}
+
 /* Text color */
-nav a, h1, h2, h3{
+h1, h2, h3, nav a{
    color: #000;
 }
+
+/* Background colors */
+.blue{
+   background-color: #0065FC;
+}
+
+.light-blue{
+   background-color: #DEEBFF;
+}
+
+.grey{
+   background-color: #F2F2F2;
+}
+
 
 /* HEADER */
 header{
@@ -81,46 +107,56 @@ nav a:hover{
 }
 
 
+/* MAIN */
+/* SECTION SEARCH */
 
-/* PHONES - small devices (less than 768px*/
-   /* header{
-      flex-direction: column;
-      justify-content: none;
-      align-items: center;
-      height: auto;
-   }
-   #logo img{
-      margin: 30px 0 0 0;
-   }
-   nav{
-      flex-direction: row;
-      justify-content: center;
-      align-items: stretch;
-      width: 100%;
-      height: 0;
-   }
-   nav ul{
-      justify-content: center;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-   }
-   nav li{
-      display: flex;
-      width: 50%;
-      height: 0;
-   }
+/* search-header Part */
+h1{
+   font-size: 23px;
+   margin: 40px 0 0 0;
+}
 
-   nav a{
-      text-align: center;
-      width: 100%;
-      margin: 0;
-      padding: 0 auto;
-      border-bottom: 3px solid #F2F2F2;
-   }
-   
-   nav a:hover{
-      color: #0065FC;
-      border-top: none;
-      border-bottom: 3px solid #0065FC;
-   } */
+#search-header p{
+   margin: 5px 0 15px 0;
+}
+
+/* Form Part */
+fieldset{
+   border: none;
+   margin: 0;
+   padding: 0;
+}
+
+#locat-icon, #location, #research-icon{
+   margin: 0;
+   padding: 16px;
+   font-size: 16px;
+   font-weight: bold;
+   width: fit-content;
+   border: 1px solid #F2F2F2;
+}
+
+#locat-icon{
+   border-radius: 15px 0 0 15px;
+}
+
+#location{
+   padding: 15px;
+   position: relative;
+   bottom: 1px; right: 5px;
+}
+
+#research-btn{
+   display: none;
+}
+
+#research-icon{
+   display: inline ;
+   color: #fff;
+   border: none;
+   border-radius: 15px;
+   position: relative;
+   right: 20px;
+}
+
+
