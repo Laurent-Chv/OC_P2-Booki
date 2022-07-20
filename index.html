@@ -31,35 +31,47 @@
                   <h1>Trouvez votre hébergment pour des vacances de rêve</h1>
                   <p>En plein centre ville ou en pleine nature</p>
                </div>
-               <div>
-                  <form method="post" action="research.php">
-                     <fieldset>
-                        <label for="location"><i id="locat-icon" class="fa-solid fa-location-dot grey"></i></label>
-                        <input type="search" name="location" id="location" value="Marseille, France" placeholder="Votre destination"/>
-                        <label for="research-btn"></label>
-                        <input type="button" name="research-btn" id="research-btn" class="blue not-mobile" value="Rechercher" />
-                        <!-- bouton "Rechercher" à afficher sauf en mobile -->
-                        <i id="research-icon" class="fa-solid fa-magnifying-glass blue only-mobile"></i>
-                        <!-- icone loupe à masquer sauf en mobile -->
-                     </fieldset>
-                     <!-- <div>
-                     <fieldset id="research-filters">
-                        <p id="filters">Filtres</p>
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <p class="filter">Économique</p>
-                        <i class="fa-solid fa-child-reaching"></i>
-                        <p class="filter">Familial</p>
-                        <i class="fa-solid fa-heart"></i>
-                        <p class="filter">Romantique</p>
-                        <i class="fa-solid fa-dog"></i>
-                        <p class="filter">Animaux autorisés</p>
-                     </fieldset>
-                     </div> -->
-                  </form>
-                  <!-- <div>
-                     <i class="fa-solid fa-info"></i>
-                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                  </div> -->
+               <form method="post" action="research.php">
+                  <label for="location"><i id="locat-icon" class="fa-solid fa-location-dot grey border-grey"></i></label>
+                  <input type="search" name="location" id="location" class="border-grey" value="Marseille, France" placeholder="Votre destination"/>
+                  <label for="research-btn"></label>
+                  <input type="button" name="research-btn" id="research-btn" class="blue not-mobile" value="Rechercher" />
+                  <!-- bouton "Rechercher" à afficher sauf en mobile -->
+                  <i id="research-icon" class="fa-solid fa-magnifying-glass blue only-mobile"></i>
+                  <!-- icone loupe à masquer sauf en mobile -->
+               </form>
+               <div id="research-filters">
+                  <p id="filter-title">
+                     <strong>Filtres</strong>
+                  </p>
+                     <div class="filter border-grey">
+                        <i class="fa-solid fa-money-bill-wave light-blue circle"></i>
+                        <p class="filter-name">
+                           <strong>Économique</strong>
+                        </p>
+                     </div>
+                     <div class="filter border-grey">
+                        <i class="fa-solid fa-child-reaching light-blue circle"></i>
+                        <p class="filter-name">
+                           <strong>Familial</strong>
+                        </p>
+                     </div>
+                     <div class="filter border-grey">
+                        <i class="fa-solid fa-heart light-blue circle"></i>
+                        <p class="filter-name">
+                           <strong>Romantique</strong>
+                        </p>
+                     </div>
+                     <div class="filter border-grey">
+                        <i class="fa-solid fa-dog light-blue circle"></i>
+                        <p class="filter-name">
+                           <strong>Animaux autorisés</strong>
+                        </p>
+                     </div>
+               </div>                  
+               <div id="info">
+                  <i id="info-icon" class="fa-solid fa-info circle border-grey"></i>
+                  <p>Plus de 500 logements sont disponibles dans cette ville</p>
                </div>
             </section>
             <section id="accomodations"></section>
