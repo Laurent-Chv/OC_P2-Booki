@@ -116,11 +116,11 @@ h1{
    padding: 17px;
    font-size: 17px;
    font-weight: bold;
-   width: fit-content;
 }
 
 #locat-icon{
    border-radius: 15px 0 0 15px;
+   font-size: 20px;
 }
 
 #location{
@@ -136,6 +136,7 @@ h1{
    border-radius: 0 15px 15px 0;
    position: relative;
    right: 10px;
+   cursor: pointer;
 }
 
 #research-icon{
@@ -148,19 +149,26 @@ h1{
    flex-direction: row;
    align-items: baseline;
    flex-wrap: wrap;
-   margin: 30px 0;
-   /* font-weight: bold; */
+   margin: 20px 0;
+   font-weight: bold;
 }
 
 #filter-title{
-   margin-right: 30px;
+   margin-bottom: 5px;
+   margin-right: 100%;
+   margin-bottom: 15px;
+}
+
+#filter-content{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px 20px;
 }
 
 .filter{
    display: flex;
    flex-direction: row;
    align-items: center;
-   margin: 5px 10px;
    height: 50px;
    border-left: none;
    border-radius: 50px;
@@ -178,11 +186,13 @@ h1{
    width: 51px;
    height: 51px;
    overflow: visible;
+   font-size: 20px;
 }
 
-.filter-name{
+.filter-txt{
    margin: 0;
    padding: 0 15px 0 12px;
+   cursor: pointer;
 }
 
 /* Info Part */
@@ -196,9 +206,9 @@ h1{
    display: flex;
    justify-content: center;
    align-items: center;
-   width: 25px;
-   height: 25px;
-   font-size: 12px;
+   width: 30px;
+   height: 30px;
+   font-size: 18px;
    margin-right: 10px;
 }
 

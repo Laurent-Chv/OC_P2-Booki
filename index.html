@@ -33,7 +33,7 @@
                </div>
                <form method="post" action="research.php">
                   <label for="location"><i id="locat-icon" class="fa-solid fa-location-dot grey border-grey"></i></label>
-                  <input type="search" name="location" id="location" class="border-grey" value="Marseille, France" placeholder="Votre destination"/>
+                  <input type="search" name="location" id="location" class="border-grey" value="Marseille, France"/>
                   <label for="research-btn"></label>
                   <input type="button" name="research-btn" id="research-btn" class="blue not-mobile" value="Rechercher" />
                   <!-- bouton "Rechercher" à afficher sauf en mobile -->
@@ -41,40 +41,39 @@
                   <!-- icone loupe à masquer sauf en mobile -->
                </form>
                <div id="research-filters">
-                  <p id="filter-title">
-                     <strong>Filtres</strong>
-                  </p>
+                  <p id="filter-title">Filtres</p>
+                  <div id="filter-content">
                      <div class="filter border-grey">
                         <i class="fa-solid fa-money-bill-wave light-blue circle"></i>
-                        <p class="filter-name">
-                           <strong>Économique</strong>
-                        </p>
+                        <a class="filter-txt">Économique</a>
                      </div>
                      <div class="filter border-grey">
                         <i class="fa-solid fa-child-reaching light-blue circle"></i>
-                        <p class="filter-name">
-                           <strong>Familial</strong>
-                        </p>
+                        <a class="filter-txt">Familial</a>
                      </div>
                      <div class="filter border-grey">
                         <i class="fa-solid fa-heart light-blue circle"></i>
-                        <p class="filter-name">
-                           <strong>Romantique</strong>
-                        </p>
+                        <a class="filter-txt">Romantique</a>
                      </div>
                      <div class="filter border-grey">
                         <i class="fa-solid fa-dog light-blue circle"></i>
-                        <p class="filter-name">
-                           <strong>Animaux autorisés</strong>
-                        </p>
+                        <a class="filter-txt">Animaux autorisés</a>
                      </div>
+                  </div>
                </div>                  
                <div id="info">
                   <i id="info-icon" class="fa-solid fa-info circle border-grey"></i>
                   <p>Plus de 500 logements sont disponibles dans cette ville</p>
                </div>
             </section>
-            <section id="accomodations"></section>
+            <section id="accomodations">
+               <!-- <div class="card">
+                  <p>vpnvavpepv</p>
+                  <a href="#">nbpip</a>
+               </div> -->
+               <!-- exemple pour card -->
+
+            </section>
                <div id="popular" class="grey"></div>
                <div id="marseille" class="grey"></div>
             <section id="activities"></section>
