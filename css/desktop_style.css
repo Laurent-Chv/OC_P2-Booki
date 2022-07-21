@@ -102,7 +102,7 @@ nav a:hover{
 /* search-header Part */
 h1{
    font-size: 23px;
-   margin: 0;
+   margin: 0 0 10px 0;
 }
 
 #search-header p{
@@ -152,7 +152,7 @@ h1{
 }
 
 #filter-title{
-   margin-right: 30px;
+   margin: 0 30px 0 10px;
 }
 
 #filter-content{
@@ -164,15 +164,21 @@ h1{
 .filter{
    display: flex;
    flex-direction: row;
+   justify-content: baseline;
    align-items: center;
+}
+
+.filter-txt{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
+   padding-right: 20px;
+   color: #000;
+   text-decoration: none;
    height: 50px;
    border-left: none;
    border-radius: 50px;
-}
-
-.filter:hover{
-   background-color: #0065FC;
-   color: #fff;
 }
 
 .filter i{
@@ -181,14 +187,14 @@ h1{
    align-items: center;
    width: 51px;
    height: 51px;
+   margin-right: 10px;
    overflow: visible;
    font-size: 20px;
 }
 
-.filter-txt{
-   margin: 0;
-   padding: 0 15px 0 12px;
-   cursor: pointer;
+.filter-txt:hover{
+   background-color: #0065FC;
+   color: #fff;
 }
 
 /* Info Part */
