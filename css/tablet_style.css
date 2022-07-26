@@ -98,8 +98,8 @@ nav a:hover{
 
 
 /* MAIN */
-/* SECTION SEARCH */
 
+/* SECTION SEARCH */
 /* search-header Part */
 h1{
    font-size: 23px;
@@ -220,3 +220,184 @@ form{
    margin-right: 10px;
 }
 
+
+/* ACCOMODATIONS PART */
+/* SECTIONS size and position */
+#accomodations{
+   display: flex;
+   flex-direction: column-reverse;
+   gap: 10px;
+}
+
+#marseille, #popular{
+   padding: 2% 3%;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.marseille-container, .popular-container{
+   display: flex;
+   gap: 20px;
+}
+
+/* GENERALS CARDS settings */
+.marseille-card, .popular-card{
+   background-color: white;
+   border: 5px solid #fff;
+   border-radius: 20px;
+   box-shadow: 0px 5px 20px #999;
+ }
+
+ .marseille-card a, .popular-card a{
+   color: #000; 
+   text-decoration: none;
+ }
+
+ /* IMG card */
+ .marseille-img, .popular-img{
+   position: relative;
+   overflow: hidden;
+ }
+
+ .marseille-img img, .popular-img img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   object-fit: cover;
+ }
+
+/* HOVER card */
+.marseille-card:hover h3, .popular-card:hover h3{
+   color: #0065FC;
+}
+
+/* BODY card */
+.marseille-title h3, .marseille-icon p, .popular-title h3, .popular-icon p{
+   margin: 0;
+ }
+
+/* Font-size */
+h2, .star-dark{
+   font-size: 22px;
+   margin: 0;
+}
+
+.marseille-title h3, .popular-title h3{
+   font-size: 16px;
+}
+
+.marseille-txt p, .popular-txt p{
+   font-size: 14px;
+}
+
+ .stars-icons{
+   font-size: 10px;
+}
+
+/* Stars colors */
+.star-dark{
+   color: #000;
+}
+
+.star-blue{
+   color: #0065FC;
+}
+
+.star-grey{
+   color: #F2F2F2;
+}
+
+/* SECTION marseille */
+#marseille{
+   background-color: #fff;
+   border-radius: 0;
+}
+
+#marseille-title{
+   margin-top: 2%;
+}
+
+.marseille-container{
+   flex-wrap: wrap;
+}
+
+.marseille-card{
+   display: flex;
+   flex-grow: 1;
+   width: 30%;
+ }
+
+ .marseille-card a{
+   width: 100%;
+ }
+
+ .marseille-img{
+   height: 110px;
+   border-radius: 15px 15px 0 0;
+ }
+
+ .marseille-body{
+   margin: 4% 4% 1% 4%;
+}
+
+ .marseille-txt p{
+   margin: 3% 0;
+ }
+
+ #see-more{
+   font-weight: bold;
+ }
+
+/* SECTION popular */
+#popular{
+   border-radius: 20px;
+}
+
+#popular-title{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 15px;
+   width: 40%;
+}
+
+#popular-title i{
+   display: flex;
+   align-items: center;
+}
+
+.popular-container{
+   flex-direction: row;
+   margin-bottom: 3%;
+}
+
+.popular-card{
+   width: 100%;
+ }
+
+ .popular-card a{
+   display: flex;
+   flex-direction: row;
+ }
+
+ .popular-img{
+   min-width: 40%;
+   height: 140px;
+   border-radius: 15px 0 0 15px;
+ }
+
+ .popular-body{
+   margin: 4% 6% 1% 6%;
+}
+
+ .popular-txt p{
+   margin: 3% 0 28% 0;
+ }
+
+
+ 
