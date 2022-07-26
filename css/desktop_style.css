@@ -223,36 +223,45 @@ h1{
 }
 
 #marseille, #popular{
-   padding: 3%;
+   padding: 2% 3%;
    border-radius: 20px;
 }
 
 #marseille{
    width: 66.5%;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
 }
 
 #popular{
    width: 33.5%;
-}
-
-h2{
-   margin: 1% 0 2% 0;
-}
-
-/* .card-img{
    display: flex;
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-} */
-
-/* Generals Cards settings */
-.card-link{
-   display: flex;
-   text-decoration: none;
-   color: #000;
+   flex-direction: column;
+   gap: 30px;
 }
-/* Stars color */
+
+/* GENERALS CARDS settings */
+
+/* Font-size */
+h2, .star-dark{
+   font-size: 22px;
+   margin: 0;
+}
+
+.marseille-title h3, .popular-title h3{
+   font-size: 16px;
+}
+
+.marseille-txt p, .popular-txt p{
+   font-size: 14px;
+}
+
+ .stars-icons{
+   font-size: 10px;
+}
+
+/* Stars colors */
 .star-dark{
    color: #000;
 }
@@ -266,86 +275,151 @@ h2{
 }
 
 /* SECTION marseille */
-#cards-container{
+#marseille-title{
+   margin-top: 2%;
+}
+
+.marseille-container{
    display: flex;
    flex-wrap: wrap;
-}
-
-.marseille-gap{
    gap: 30px;
-}
-
-.marseille-link{
-   /* display: flex;
-   flex-grow: 1; */
-   width: 33.5%;
-   /* height: 50%; */
-}
-
-.card-marseille{
-   /* display: flex;
-   flex-direction: column; */
    width: 100%;
-   height: fit-content;
-   background-color: #fff;
+}
+
+.marseille-card{
+   width: 30%;
+   background-color: white;
    border: 5px solid #fff;
    border-radius: 20px;
-   /* box-shadow: 0px 5px 20px #999; */
-   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
+   box-shadow: 0px 5px 20px #999;
+ }
 
-/* .card-marseille-img{
-   width: 100%;
-   height: 100%;
-} */
+ .marseille-card a{
+   color: #000; 
+   text-decoration: none;
+ }
 
-.card-img{
-   /* display: flex; */
+ .marseille-img{
+   height: 110px;
+   position: relative;
+   overflow: hidden;
+   border-radius: 15px 15px 0 0;
+ }
+
+ .marseille-img img{
    width: 100%;
-   /* height: 60%; */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    object-fit: cover;
+ }
+
+ .marseille-card:hover  h3{
+   color: #0065FC;
 }
 
-.card-marseille-img img{
-   border-radius: 20px 20px 0 0;
-   /* width: 100%;
-   height: 60%;
-   object-fit: cover; */
+ .marseille-body{
+   margin: 4% 4% 1% 4%;
 }
 
-.marseille-card-body{
-   margin: 5px 10px;
-   /* width: 100%;
-   height: 40%; */
-}
+ .marseille-title h3, .marseille-icon p{
+   margin: 0;
+ }
 
-.marseille-card-title, .marseille-card-txt, .marseille-card-icons{
-margin: 5px 0 0 0;
-}
+ .marseille-txt p{
+   margin: 3% 0;
+ }
+
+ #see-more{
+   font-weight: bold;
+ }
 
 /* SECTION popular */
-.popular-gap{
-   row-gap: 30px;
+#popular-title{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 15px;
 }
 
-.popular-link{
+#popular-title i{
+   display: flex;
+   align-items: center;
+}
+
+.popular-container{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   /* row-gap: 30px; */
+}
+
+.popular-card{
+   width: 100%;
+   background-color: white;
+   border: 5px solid #fff;
+   border-radius: 20px;
+   box-shadow: 0px 5px 20px #999;
+ }
+
+ .popular-card a{
+   display: flex;
+   flex-direction: row;
+   color: #000; 
+   text-decoration: none;
+ }
+
+ .popular-img{
+   min-width: 40%;
+   height: 140px;
+   position: relative;
+   overflow: hidden;
+   border-radius: 15px 0 0 15px;
+ }
+
+ .popular-img img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   object-fit: cover;
+ }
+ 
+ .popular-card:hover h3{
+   color: #0065FC;
+}
+
+ .popular-body{
+   margin: 4% 6% 1% 6%;
+}
+
+ .popular-title h3, .popular-icon p{
+   margin: 0;
+ }
+
+ .popular-txt p{
+   margin: 3% 0 28% 0;
+ }
+
+ 
+/* .popular-link{
    width: 100%;
 }
 
 .card-popular{
    display: flex;
    flex-direction: row;
-   /* width: 300px; */
    background-color: #fff;
    border: 5px solid #fff;
    border-radius: 20px;
-   /* box-shadow: 0px 5px 20px #999; */
    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .card-popular-img{
    width: 50%;
-   /* height: 100%; */
 }
 
 .card-popular-img img{
@@ -355,7 +429,7 @@ margin: 5px 0 0 0;
 .card-body{
    display: flex;
    flex-direction: column;
-}
+} */
 
 
                   /* CARD exemple */
