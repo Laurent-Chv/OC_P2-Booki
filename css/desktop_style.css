@@ -24,9 +24,6 @@ body {
 
 #container{
    width: 95%;
-   /* width: 100%; */
-   /* margin: 0 40px; */
-   /* max-width: 1400px; */
 }
 
 /* Text color */
@@ -245,7 +242,7 @@ h1{
 
 .marseille-container, .popular-container{
    display: flex;
-   gap: 30px;
+   gap: 25px;
 }
 
 /* GENERALS CARDS settings */
@@ -256,7 +253,7 @@ h1{
    box-shadow: 0px 5px 20px #999;
  }
 
- .marseille-card a, .popular-card a, #see-more{
+ .marseille-card a, .popular-card a, #see-more a{
    color: #000; 
    text-decoration: none;
  }
@@ -351,6 +348,7 @@ h2, .star-dark{
  }
 
  #see-more{
+   font-size: 18px;
    font-weight: bold;
  }
 
@@ -403,7 +401,7 @@ h2, .star-dark{
 
 #activities-img-title h2{
    font-size: 22px;
-   margin: 50px 0 15px 0;
+   margin: 50px 0 20px 0;
 }
 
 /* Activities cards */
@@ -419,9 +417,6 @@ h2, .star-dark{
    flex: 1;
    gap: 30px;
    width: 25%;
-}
-
- .activities-content{
    height: 450px;
  }
 
@@ -491,7 +486,12 @@ footer{
 #footer-container{
    display: flex;
    flex-direction: row;
-   gap: 250px;
+   flex: 1;
+   width: 100%;
+}
+
+.footer-content{
+   margin-right: 200px;
 }
 
 .footer-content h4{
@@ -500,7 +500,9 @@ footer{
 }
 
 .footer-links{
+   width: 100%;
    padding-left: 0;
+   white-space: nowrap;
 }
 
 .footer-links li{
@@ -509,6 +511,7 @@ footer{
 }
 
 .footer-links a{
+   width: 100%;
    font-size: 14px;
    color: #000; 
    text-decoration: none;

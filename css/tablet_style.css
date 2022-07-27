@@ -24,7 +24,6 @@ body {
 
 #container{
    width: 96%;
-   /* max-width: 992px; */
 }
 
 /* Text color */
@@ -250,7 +249,7 @@ form{
    box-shadow: 0px 5px 20px #999;
  }
 
- .marseille-card a, .popular-card a, #see-more{
+ .marseille-card a, .popular-card a, #see-more a{
    color: #000; 
    text-decoration: none;
  }
@@ -350,6 +349,7 @@ h2, .star-dark{
  }
 
  #see-more{
+   font-size: 18px;
    font-weight: bold;
  }
 
@@ -401,4 +401,127 @@ h2, .star-dark{
 
 
 /* SECTION ACTIVITIES */
+#activities{
+   padding: 2% 3%;
+   width: 100%;
+   margin-bottom: 50px;
+}
 
+#activities-img-title h2{
+   font-size: 22px;
+   margin: 30px 0 20px 0;
+}
+
+/* Activities cards */
+#activities-container{
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+}
+
+.activities-content{
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   gap: 30px;
+   width: 25%;
+   height: 280px;
+ }
+
+ .activities-content .content-a{
+   height: 57%;
+ }
+
+ .activities-content .content-b{
+   height: 43%;
+ }
+ 
+ .activities-content .content-c{
+   height: 47%;
+ }
+
+ .activities-content .content-d{
+   height: 53%;
+ }
+
+.activities-card{
+   box-shadow: 0px 5px 20px #999;
+   border-radius: 20px;
+   height: 100%;
+}
+
+.activities-card a{
+   color: #000;
+   text-decoration: none;
+}
+
+.activities-card:hover h3{
+   color: #0065FC;
+}
+
+.activities-img{
+   position: relative;
+   overflow: hidden;
+   height: calc(100% - 50px);
+ }
+
+.activities-img img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   object-fit: cover;
+   border-radius: 20px 20px 0 0;
+}
+
+.activities-title h3{
+   font-size: 14px;
+   margin: 0;
+   padding: 15px;
+}
+
+
+/* FOOTER */
+footer{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 40px 20px 20px 20px;
+}
+
+#footer-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex: 1;
+   width: 100%;
+}
+
+.footer-content{
+   margin-right: 30px;
+}
+
+.footer-content h4{
+   font-size: 16px;
+   margin: 0 0 15px 0;
+}
+
+.footer-links{
+   width: 100%;
+   padding-left: 0;
+   white-space: nowrap;
+}
+
+.footer-links li{
+   list-style-type: none;
+   margin-top: 8px;
+}
+
+.footer-links a{
+   width: 100%;
+   font-size: 14px;
+   color: #000; 
+   text-decoration: none;
+}
