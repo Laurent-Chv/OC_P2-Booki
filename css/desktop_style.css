@@ -24,7 +24,9 @@ body {
 
 #container{
    width: 95%;
-   max-width: 1400px;
+   /* width: 100%; */
+   /* margin: 0 40px; */
+   /* max-width: 1400px; */
 }
 
 /* Text color */
@@ -254,7 +256,7 @@ h1{
    box-shadow: 0px 5px 20px #999;
  }
 
- .marseille-card a, .popular-card a{
+ .marseille-card a, .popular-card a, #see-more{
    color: #000; 
    text-decoration: none;
  }
@@ -317,7 +319,7 @@ h2, .star-dark{
 }
 
 /* SECTION marseille */
-#marseille-title{
+#marseille-cards-title{
    margin-top: 2%;
 }
 
@@ -353,14 +355,14 @@ h2, .star-dark{
  }
 
 /* SECTION popular */
-#popular-title{
+#popular-cards-title{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    margin-top: 15px;
 }
 
-#popular-title i{
+#popular-cards-title i{
    display: flex;
    align-items: center;
 }
@@ -393,4 +395,121 @@ h2, .star-dark{
  }
 
 
+/* SECTION ACTIVITIES */
+#activities{
+   width: 100%;
+   margin-bottom: 70px;
+}
 
+#activities-img-title h2{
+   font-size: 22px;
+   margin: 50px 0 15px 0;
+}
+
+/* Activities cards */
+#activities-container{
+   display: flex;
+   flex-direction: row;
+   gap: 30px;
+}
+
+.activities-content{
+   display: flex;
+   flex-direction: column;
+   flex: 1;
+   gap: 30px;
+   width: 25%;
+}
+
+ .activities-content{
+   height: 450px;
+ }
+
+ .activities-content .content-a{
+   height: 60%;
+ }
+
+ .activities-content .content-b{
+   height: 40%;
+ }
+ 
+ .activities-content .content-c{
+   height: 45%;
+ }
+
+ .activities-content .content-d{
+   height: 55%;
+ }
+
+.activities-card{
+   box-shadow: 0px 5px 20px #999;
+   border-radius: 20px;
+   height: 100%;
+}
+
+.activities-card a{
+   color: #000;
+   text-decoration: none;
+}
+
+.activities-card:hover h3{
+   color: #0065FC;
+}
+
+.activities-img{
+   position: relative;
+   overflow: hidden;
+   height: calc(100% - 50px);
+ }
+
+.activities-img img{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   object-fit: cover;
+   border-radius: 20px 20px 0 0;
+}
+
+.activities-title h3{
+   font-size: 14px;
+   margin: 0;
+   padding: 15px;
+}
+
+
+/* FOOTER */
+footer{
+   display: flex;
+   align-items: center;
+   width: 100%;
+   padding: 40px 40px 30px 40px;
+}
+
+#footer-container{
+   display: flex;
+   flex-direction: row;
+   gap: 250px;
+}
+
+.footer-content h4{
+   font-size: 16px;
+   margin: 0 0 15px 0;
+}
+
+.footer-links{
+   padding-left: 0;
+}
+
+.footer-links li{
+   list-style-type: none;
+   margin-top: 8px;
+}
+
+.footer-links a{
+   font-size: 14px;
+   color: #000; 
+   text-decoration: none;
+}

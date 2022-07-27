@@ -24,7 +24,7 @@ body {
 
 #container{
    width: 96%;
-   max-width: 992px;
+   /* max-width: 992px; */
 }
 
 /* Text color */
@@ -250,7 +250,7 @@ form{
    box-shadow: 0px 5px 20px #999;
  }
 
- .marseille-card a, .popular-card a{
+ .marseille-card a, .popular-card a, #see-more{
    color: #000; 
    text-decoration: none;
  }
@@ -318,7 +318,7 @@ h2, .star-dark{
    border-radius: 0;
 }
 
-#marseille-title{
+#marseille-cards-title{
    margin-top: 2%;
 }
 
@@ -358,7 +358,7 @@ h2, .star-dark{
    border-radius: 20px;
 }
 
-#popular-title{
+#popular-cards-title{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -366,7 +366,7 @@ h2, .star-dark{
    width: 40%;
 }
 
-#popular-title i{
+#popular-cards-title i{
    display: flex;
    align-items: center;
 }
@@ -400,4 +400,5 @@ h2, .star-dark{
  }
 
 
- 
+/* SECTION ACTIVITIES */
+

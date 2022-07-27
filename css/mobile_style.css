@@ -24,7 +24,7 @@ body {
 
 #container{
    width: 100%;
-   max-width: 768px;
+   /* max-width: 768px; */
 }
 
 #search, #marseille, #popular, #activities, #footer-container{
@@ -278,7 +278,7 @@ form{
    box-shadow: 0px 5px 20px #999;
  }
 
- .marseille-card a, .popular-card a{
+ .marseille-card a, .popular-card a, #see-more{
    color: #000; 
    text-decoration: none;
  }
@@ -345,7 +345,7 @@ h2, .star-dark{
    background-color: #fff;
 }
 
-#marseille-title{
+#marseille-cards-title{
    margin-top: 2%;
 }
 
@@ -381,7 +381,7 @@ h2, .star-dark{
  }
 
 /* SECTION popular */
-#popular-title{
+#popular-cards-title{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -389,7 +389,7 @@ h2, .star-dark{
    width: 100%;
 }
 
-#popular-title i{
+#popular-cards-title i{
    display: flex;
    align-items: center;
 }
@@ -421,3 +421,7 @@ h2, .star-dark{
  .popular-txt p{
    margin: 3% 0 28% 0;
  }
+
+
+ /* SECTION ACTIVITIES */
+
