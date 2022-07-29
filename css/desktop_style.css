@@ -222,22 +222,11 @@ h1{
 }
 
 #marseille, #popular{
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
    padding: 2% 3%;
    border-radius: 20px;
-}
-
-#marseille{
-   width: 66.5%;
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
-}
-
-#popular{
-   width: 33.5%;
-   display: flex;
-   flex-direction: column;
-   gap: 30px;
 }
 
 .marseille-container, .popular-container{
@@ -247,7 +236,7 @@ h1{
 
 /* GENERALS CARDS settings */
 .marseille-card, .popular-card{
-   background-color: white;
+   background-color: #fff;
    border: 5px solid #fff;
    border-radius: 20px;
    box-shadow: 0px 5px 20px #999;
@@ -280,7 +269,7 @@ h1{
 }
 
 /* BODY card */
-.marseille-title h3, .marseille-icon p, .popular-title h3, .popular-icon p{
+.marseille-title h3, .marseille-icon p, .popular-title, .popular-price, .stars-icons{
    margin: 0;
  }
 
@@ -290,11 +279,11 @@ h2, .star-dark{
    margin: 0;
 }
 
-.marseille-title h3, .popular-title h3{
+.marseille-title h3, .popular-title{
    font-size: 16px;
 }
 
-.marseille-txt p, .popular-txt p{
+.marseille-txt p, .popular-price{
    font-size: 14px;
 }
 
@@ -316,6 +305,10 @@ h2, .star-dark{
 }
 
 /* SECTION marseille */
+#marseille{
+   width: 66.5%;
+}
+
 #marseille-cards-title{
    margin-top: 2%;
 }
@@ -337,27 +330,32 @@ h2, .star-dark{
  .marseille-img{
    height: 110px;
    border-radius: 15px 15px 0 0;
- }
+}
 
- .marseille-body{
+.marseille-body{
    margin: 4% 4% 1% 4%;
 }
 
- .marseille-txt p{
+.marseille-txt p{
    margin: 3% 0;
- }
+}
 
- #see-more{
+#see-more{
    font-size: 18px;
    font-weight: bold;
- }
+}
 
 /* SECTION popular */
+#popular{
+   width: 33.5%;
+}
+
 #popular-cards-title{
    display: flex;
    flex-direction: row;
    justify-content: space-between;
    margin-top: 15px;
+   width: 100%;
 }
 
 #popular-cards-title i{
@@ -371,26 +369,34 @@ h2, .star-dark{
 
 .popular-card{
    width: 100%;
- }
+}
 
- .popular-card a{
+.popular-card a{
    display: flex;
    flex-direction: row;
- }
+}
 
- .popular-img{
+.popular-img{
    min-width: 40%;
    height: 140px;
    border-radius: 15px 0 0 15px;
- }
-
- .popular-body{
-   margin: 4% 6% 1% 6%;
 }
 
- .popular-txt p{
-   margin: 3% 0 28% 0;
- }
+.popular-body{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 8px 12px 0 8px;
+   height: 130px;
+}
+
+.popular-price{
+   margin-top: 5px;
+}
+
+.stars-icons{
+   padding-bottom: 5px;
+}
 
 
 /* SECTION ACTIVITIES */
@@ -468,10 +474,16 @@ h2, .star-dark{
    border-radius: 20px 20px 0 0;
 }
 
+.activities-title{
+   display: flex;
+   align-items: center;
+   height: 50px;
+}
+
 .activities-title h3{
    font-size: 14px;
    margin: 0;
-   padding: 15px;
+   padding: 0 12px;
 }
 
 
@@ -497,6 +509,7 @@ footer{
 .footer-content h4{
    font-size: 16px;
    margin: 0 0 15px 0;
+   white-space:nowrap;
 }
 
 .footer-links{

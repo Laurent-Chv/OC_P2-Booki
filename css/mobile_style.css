@@ -255,13 +255,13 @@ form{
 }
 
 #marseille, #popular{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
    padding-top: 3%;
    padding-bottom: 5%;
    border-radius: 0;
    width: 100%;
-   display: flex;
-   flex-direction: column;
-   gap: 20px;
 }
 
 .marseille-container, .popular-container{
@@ -271,7 +271,7 @@ form{
 
 /* GENERALS CARDS settings */
 .marseille-card, .popular-card{
-   background-color: white;
+   background-color: #fff;
    border: 5px solid #fff;
    border-radius: 20px;
    box-shadow: 0px 5px 20px #999;
@@ -304,7 +304,7 @@ form{
 }
 
 /* BODY card */
-.marseille-title h3, .marseille-icon p, .popular-title h3, .popular-icon p{
+.marseille-title h3, .marseille-icon p, .popular-title, .popular-price, .stars-icons{
    margin: 0;
  }
 
@@ -314,11 +314,11 @@ h2, .star-dark{
    margin: 0;
 }
 
-.marseille-title h3, .popular-title h3{
+.marseille-title h3, .popular-title{
    font-size: 16px;
 }
 
-.marseille-txt p, .popular-txt p{
+.marseille-txt p, .popular-price{
    font-size: 14px;
 }
 
@@ -415,12 +415,20 @@ h2, .star-dark{
  }
 
  .popular-body{
-   margin: 4% 6% 1% 6%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   margin: 10px 15px 0 12px;
+   height: 130px;
 }
 
- .popular-txt p{
-   margin: 3% 0 28% 0;
- }
+.popular-price{
+   margin-top: 5px;
+}
+
+.stars-icons{
+   padding-bottom: 5px;
+}
 
 
 /* SECTION ACTIVITIES */
