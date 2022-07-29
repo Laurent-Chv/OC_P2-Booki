@@ -163,7 +163,7 @@ h1{
 .filter{
    display: flex;
    flex-direction: row;
-   justify-content: baseline;
+   justify-items: baseline;
    align-items: center;
 }
 

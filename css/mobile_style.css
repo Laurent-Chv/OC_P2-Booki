@@ -64,7 +64,7 @@ h1, h2, h3, nav a{
 header{
    display: flex;
    flex-direction: column;
-   justify-content: none;
+   justify-content: initial;
    align-items: center;
 }
 
@@ -195,7 +195,7 @@ form{
 .filter{
    display: flex;
    flex-direction: row;
-   justify-content: baseline;
+   justify-items: baseline;
    align-items: center;
 }
 
