@@ -1,5 +1,7 @@
 /* PHONES - small devices (less than 768px) */
-/* GENERAL SETTINGS */
+
+/* ********************************************* */
+/*************** GENERAL SETTINGS ***************/
 
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
@@ -8,12 +10,6 @@
 *{
    box-sizing: border-box;
 }
-
-/* body {
-   font-family: 'Raleway', sans-serif;
-	display: flex;
-	justify-content: center;
-} */
 
 body {
    font-family: 'Raleway', sans-serif;
@@ -60,7 +56,8 @@ h1, h2, h3, nav a{
 }
 
 
-/* HEADER */
+/* ********************************************* */
+/**************** HEADER ****************/
 header{
    display: flex;
    flex-direction: column;
@@ -116,9 +113,10 @@ nav a:hover{
 }
 
 
-/* MAIN */
+/* ********************************************* */
+/**************** MAIN ****************/
 
-/* SECTION SEARCH */
+/**************** SECTION SEARCH ****************/
 /* search-header Part */
 h1{
    font-size: 23px;
@@ -246,7 +244,9 @@ form{
 }
 
 
-/* ACCOMODATIONS PART */
+/* ********************************************* */
+/**************** ACCOMODATIONS PART ****************/
+
 /* SECTIONS size and position */
 #accomodations{
    display: flex;
@@ -339,7 +339,7 @@ h2, .star-dark{
    color: #F2F2F2;
 }
 
-/* SECTION marseille */
+/**************** SECTION marseille ****************/
 #marseille{
    background-color: #fff;
 }
@@ -380,7 +380,7 @@ h2, .star-dark{
    font-weight: bold;
  }
 
-/* SECTION popular */
+/**************** SECTION popular ****************/
 #popular-cards-title{
    display: flex;
    flex-direction: row;
@@ -431,7 +431,8 @@ h2, .star-dark{
 }
 
 
-/* SECTION ACTIVITIES */
+/* ********************************************* */
+/**************** SECTION ACTIVITIES ****************/
 #activities{
    width: 100%;
    margin-bottom: 40px;
@@ -495,7 +496,8 @@ h2, .star-dark{
 }
 
 
-/* FOOTER */
+/* ********************************************* */
+/**************** FOOTER ****************/
 footer{
    display: flex;
    align-items: center;

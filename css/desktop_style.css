@@ -1,19 +1,15 @@
 /* DESKTOP FIRST - large devices (min 992px) */
-/* GENERAL SETTINGS */
+
+/* ********************************************* */
+/*************** GENERAL SETTINGS ***************/
 
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-/* Width and containers */
+/* Width and main position */
 *{
    box-sizing: border-box;
 }
-
-/* body {
-   font-family: 'Raleway', sans-serif;
-	display: flex;
-	justify-content: center;
-} */
 
 body {
    font-family: 'Raleway', sans-serif;
@@ -55,7 +51,8 @@ h1, h2, h3, nav a{
 }
 
 
-/* HEADER */
+/* ********************************************* */
+/**************** HEADER ****************/
 header{
    display: flex;
    justify-content: space-between;
@@ -95,9 +92,10 @@ nav a:hover{
 }
 
 
-/* MAIN */
+/* ********************************************* */
+/**************** MAIN ****************/
 
-/* SECTION SEARCH */
+/**************** SECTION SEARCH ****************/
 /* search-header Part */
 h1{
    font-size: 23px;
@@ -214,7 +212,9 @@ h1{
 }
 
 
-/* ACCOMODATIONS PART */
+/* ********************************************* */
+/**************** ACCOMODATIONS PART ****************/
+
 /* SECTIONS size and position */
 #accomodations{
    display: flex;
@@ -304,7 +304,7 @@ h2, .star-dark{
    color: #F2F2F2;
 }
 
-/* SECTION marseille */
+/**************** SECTION marseille ****************/
 #marseille{
    width: 66.5%;
 }
@@ -345,7 +345,7 @@ h2, .star-dark{
    font-weight: bold;
 }
 
-/* SECTION popular */
+/**************** SECTION popular ****************/
 #popular{
    width: 33.5%;
 }
@@ -399,7 +399,8 @@ h2, .star-dark{
 }
 
 
-/* SECTION ACTIVITIES */
+/* ********************************************* */
+/**************** SECTION ACTIVITIES ****************/
 #activities{
    width: 100%;
    margin-bottom: 70px;
@@ -487,7 +488,8 @@ h2, .star-dark{
 }
 
 
-/* FOOTER */
+/* ********************************************* */
+/**************** FOOTER ****************/
 footer{
    display: flex;
    align-items: center;
